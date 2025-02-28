@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quizapplication</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+</head>
+<body>
+    <div class="app-container">
+        <h2 class="welcome">Welcome to an interactive quizapp</h2>
+        <div class="about-app">
+            
+            1.You can fisrt choose a category </br>
+            2.whithin category choose 5, 10 or 15 questions</br>
+            3.Start the quize you see the time limit depending on number of questions
+        </div>
+        <h3 class="category">Select a category</h3>
+        <div class="category-options">
+            <button class="category-btn active">HTML</button>
+            <button class="category-btn">CSS</button>
+            <button class="category-btn">Javascript</button>
+        </div>
+      
+        <h3 class="q">NO. of Questions</h3>
+        <div class="no-questions">
+            <button class="no-q active">5</button>
+            <button class="no-q">10</button>
+            <button class="no-q">15</button>
+        </div>
+        <div class="start">
+            <button class="start-btn">Start the Quiz</button>
+        </div>
+
+
+    </div>
+    <div class="quiz-container">
+        <header class="q-header">
+            <h2 class="q-title">Quize App</h2>
+            <div class="q-timer">
+                <span class="material-symbols-outlined">
+                    timer_play
+                    </span>
+                <p class="time">15s</p>
+            </div>
+
+        </header>
+        <div class="q-content">
+            <h1 class="q-question"></h1>
+            <ul class="answers">
+                
+            </ul>
+        </div>
+        <div class="q-footer">
+            <p class="q-status"></p>
+            <button class="next-btn">
+                Next 
+                <span class="material-symbols-outlined">
+                    arrow_right_alt
+                    </span>
+            </button>
+        </div>
+    </div>
+    <div class="result-container">
+        <img src="quiz-over.png" class="result-img">
+        <h2 class="h2 result-title">Quize completed</h2>
+        <p class="result-msg">
+        </p>
+        <button class="try-again">Try again</button>
+    </div>
+    <script src="javascript/questions.js"></script>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
