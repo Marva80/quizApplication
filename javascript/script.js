@@ -5,6 +5,7 @@ const timerDisplay = document.querySelector(".time");
 const resultCon = document.querySelector(".result-container");
 const quizCon = document.querySelector(".quiz-container");
 const appCon = document.querySelector(".app-container");
+const qTitle = document.querySelector(".q-title");
 
 
 let quizCategory = "javascript";
@@ -100,7 +101,9 @@ const renderQuestion =() => {
     nextQuestion.style.visibility="hidden";
     quizCon.querySelector(".q-timer").style.background = "#32313c";
     document.querySelector(".q-question").textContent= currentQuestion.question;
-    questionStatus.innerHTML = `<b>${qIndexHistory.length}</b> of <b>${numbQuestion}</b> Questions`
+    questionStatus.innerHTML = `<b>${qIndexHistory.length}</b> of <b>${numbQuestion}</b> Questions`;
+    qTitle.innerHTML = `Quize App: ${quizCategory}`;
+    
 
     currentQuestion.options.forEach((option ,index) => {
         const li = document.createElement("li");
@@ -120,6 +123,7 @@ const startQuiz = () =>{
     numbQuestion = parseInt(appCon.querySelector(".no-q.active").textContent);
 
     renderQuestion();
+
 }
 
 document.querySelectorAll(".category-btn, .no-q").forEach(option => {
