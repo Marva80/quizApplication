@@ -23,7 +23,7 @@ En dynamisk och interaktiv webbapplikation där användaren kan göra quiz inom 
 
 ## 🚀 Så använder du appen
 
-1. Öppna `index.html` i din webbläsare.
+1. Öppna `start.html` i din webbläsare.
 2. Läs introduktionen och välj ett ämne.
 3. Svara på frågorna – en i taget.
 4. Se ditt resultat direkt när quizen är klar.
